@@ -1,0 +1,22 @@
+html, body {
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+#left_content {
+    height: 100%;
+    background-color: #1a1a1a;
+    float:left;
+    width:15%;
+}
+#right_content {
+    height: 100%;
+    float:right;
+    width:85%;
+}
+
+#app
+{
+  height:100%;
+  width:100%;
+}

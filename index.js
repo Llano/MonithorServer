@@ -19,6 +19,7 @@ mongodb.connectToServer( function( err ) {
     app.set('view engine', 'ejs');
     app.use(express.static(path.join(__dirname, 'public')));
     app.use('/scripts', express.static(__dirname + '/node_modules/vue/dist/'));
+    app.use('/css', express.static(__dirname + '/node_modules/bulma/css/'));
 
     app.use(session);
 

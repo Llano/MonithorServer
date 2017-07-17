@@ -18,5 +18,15 @@ module.exports = function(app, db) {
         });
 
     });
+
+    app.get("/server/:server_id", function(req, res) {
+
+        db.getDb().collection("servers").findOne({"server_id": req.params.server_id}, function(err, item) {
+            if(item) {
+                res.render('pages/server', {server: item});
+
+            }
+        });
+    });
     
 };
